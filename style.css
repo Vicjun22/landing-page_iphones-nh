@@ -1,0 +1,96 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-width: 350px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+    background: linear-gradient(to bottom, #DAB224, #FFF4DD, #FFF4DD, #FFF4DD);
+}
+
+main {
+    width: 100%;
+    height: 90vh;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+
+    background-image: url('./assets/images/bg-iphone.png');
+    background-repeat: no-repeat;
+    background-size: 650px;
+    background-position: bottom right;
+}
+
+.image__container {
+    width: 45%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.iphone__gif {
+    width: 2000px;
+}
+
+.logo__container {
+    width: 10%;
+    margin-top: 2%;
+}
+
+.logo__web {
+    width: 100%;
+    
+    position: relative;
+    top: 0;
+}
+
+.logo__mobile {
+    display: none;
+}
+
+.content {
+    width: 45%;
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background-color: #DAB224;
+}
+
+.content__footer {
+    color: #000000;
+    padding: 10px 20px;
+} & a {
+    text-align: center;
+    font-weight: 800;
+    color: #000000;
+    cursor: pointer;
+}
