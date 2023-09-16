@@ -28,10 +28,11 @@ main {
     margin: 0;
 
     display: flex;
+    flex-direction: row;
 
     background-image: url('./assets/images/bg-iphone.png');
     background-repeat: no-repeat;
-    background-size: 650px;
+    background-size: 40%;
     background-position: bottom right;
 }
 
@@ -68,6 +69,40 @@ main {
 
 .content {
     width: 45%;
+    gap: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content img {
+    width: 50%;
+}
+
+.content button {
+    width: 50%;
+    padding: 15px 20px;
+
+    font-size: larger;
+    font-weight: bold;
+    color: #ffffff;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 10px;
+    background-color: #0DC806;
+}
+
+.content button:hover {
+    color: #D9D9D9;
+    background-color: #0a9605;
+}
+
+.mobile__hidden {
+    display: none;
 }
 
 footer {
@@ -93,4 +128,53 @@ footer {
     font-weight: 800;
     color: #000000;
     cursor: pointer;
+}
+
+@media (max-width: 860px) {
+    body {
+        height: 100vh;
+        justify-content: space-between;
+    }
+
+    main {
+        height: 90vh;
+
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
+        background-size: 80%;
+    }
+
+    .logo__mobile {
+            height: 20vh;
+            margin-top: 25px;
+            display: flex;
+    }
+
+    .logo__web {
+        display: none;
+    }
+
+    .image__container {
+        display: none;
+    }
+
+    .content {
+        width: 70%;
+    }
+
+    .content img {
+        width: 80%;
+    }
+
+    .content button {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .mobile__hidden {
+        height: 10%; 
+        display: flex;
+    }
 }
