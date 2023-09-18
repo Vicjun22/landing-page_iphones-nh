@@ -47,8 +47,8 @@ main {
     overflow: hidden;
 }
 
-.iphone__gif {
-    width: 2000px;
+.iphone-15__img {
+    width: auto;
 }
 
 .logo__container {
@@ -85,7 +85,7 @@ main {
     width: 50%;
     padding: 15px 20px;
 
-    text-style: none;
+    font-style: none;
     text-decoration: none;
     font-size: larger;
     font-weight: bold;
@@ -149,7 +149,7 @@ footer {
     }
 
     .logo__mobile {
-            height: 20vh;
+            height: 20%;
             margin-top: 25px;
             display: flex;
     }
@@ -159,24 +159,24 @@ footer {
     }
 
     .image__container {
-        display: none;
+        height: 35%;
+        display: flex;
+    }
+
+    .iphone-15__img {
+        height: 80%;
     }
 
     .content {
-        width: 70%;
+        width: 40%;
     }
 
     .content img {
-        width: 80%;
+        width: 100%;
     }
 
     .content a {
         width: 100%;
         margin-bottom: 50px;
-    }
-
-    .mobile__hidden {
-        height: 10%; 
-        display: flex;
     }
 }
